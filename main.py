@@ -2,13 +2,14 @@ import telebot
 from telebot import types
 
 bot = telebot.TeleBot('7729006288:AAHKoiwSNw1GOre8CeMF3Oyfvco_lD4T3ws')
-
+# меню
 menu = types.ReplyKeyboardMarkup(resize_keyboard=True)
 write= types.KeyboardButton("Записать событие")
 events = types.KeyboardButton("События")
 delete = types.KeyboardButton("Удалить событие")
 edit = types.KeyboardButton("Редактировать событие")
 menu.add(write,events,delete,edit)
+# кнопка назад
 back = types.ReplyKeyboardMarkup(resize_keyboard=True)
 back_button = types.KeyboardButton("Назад")
 back.add(back_button)
